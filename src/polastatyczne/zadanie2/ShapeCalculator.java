@@ -13,7 +13,7 @@ public class ShapeCalculator {
     }
 
     public static double circlePerimeter(Circle circle){
-        double perimeter = 2*Circle.PI*circle.getR();
+        double perimeter = 2*Math.PI*circle.getR();
         return perimeter;
     }
 
