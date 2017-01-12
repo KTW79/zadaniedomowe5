@@ -8,22 +8,22 @@ import com.sun.org.apache.regexp.internal.RE;
 public class ShapeCalculator {
 
     public static double circleArea(Circle circle){
-        double area = Circle.PI*Circle.r*Circle.r;
+        double area = Math.PI*Math.pow(circle.getR(),2);
         return area;
     }
 
     public static double circlePerimeter(Circle circle){
-        double perimeter = 2*Circle.PI*Circle.r;
+        double perimeter = 2*Circle.PI*circle.getR();
         return perimeter;
     }
 
     public static double rectangleArea(Rectangle rectangle){
-        double area = Rectangle.a*Rectangle.b;
+        double area = rectangle.getA()*rectangle.getB();
         return area;
     }
 
     public static double rectanglePerimeter(Rectangle rectangle){
-        double perimieter = (2*Rectangle.a) + (2*Rectangle.b);
+        double perimieter = (2*rectangle.getA()) + (2*rectangle.getB());
         return perimieter;
     }
 }
