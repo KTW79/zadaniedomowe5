@@ -8,20 +8,26 @@ public class FourBoard {
         int[][] tab = new int[4][4];
 
 
-
         for (int i = 0; i < tab.length; i++) {
             for (int j = 0; j < tab.length; j++) {
                 tab[i][j]=i+j;
             }
         }
 
-
-        for (int i :tab[0]){
-            for (int j:tab[0])
-            System.out.println(i+j);
+        for (int[] row : tab) {
+            for (int cell : row) {
+                System.out.print(cell+" "); //print row
             }
+            System.out.println(); //new line / next row
+
+
         }
     }
+}
+
+
+
+
 
         /*
         (Dodatkowe)	Napisz	program,	w	którym	zdefiniujesz	tablicę	dwuwymiarową	4x4.
