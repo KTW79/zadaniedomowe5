@@ -15,10 +15,10 @@ public class FourBoard {
         }
 
         for (int[] row : tab) {
-            for (int cell : row) {
-                System.out.print(cell+" "); //print row
+            for (int cell : row) {//przypisz do każdej komórki liczbę z rzędu
+                System.out.print(cell+" "); //wyświetl rząd i
             }
-            System.out.println(); //new line / next row
+            System.out.println(); //nowa linia, następny rząd
 
 
         }
